@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <AndroidBuildType>Gradle</AndroidBuildType>
+    <RootNamespace>SwiftUI_Tutorials</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ProjectVersion>1.0</ProjectVersion>
+    <ProjectGuid>{28f02b43-d5f6-4218-aee2-24949789b936}</ProjectGuid>
+    <_PackagingProjectWithoutNativeComponent>true</_PackagingProjectWithoutNativeComponent>
+    <LaunchActivity Condition="'$(LaunchActivity)' == ''">com.SwiftUI_Tutorials.SwiftUI_Tutorials</LaunchActivity>
+    <JavaSourceRoots>src\main\java</JavaSourceRoots>
+  </PropertyGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.props" />
+  <ItemDefinitionGroup>
+    <GradlePackage>
+      <ProjectDirectory>$(ProjectDir)app</ProjectDirectory>
+    </GradlePackage>
+  </ItemDefinitionGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <GradleTemplate Include="app\build.gradle.template" />
+    <GradleTemplate Include="app\src\main\AndroidManifest.xml.template" />
+    <GradleTemplate Include="build.gradle.template" />
+    <GradleTemplate Include="settings.gradle.template" />
+    <GradleTemplate Include="gradle\wrapper\gradle-wrapper.properties.template" />
+  </ItemGroup>
+  <ItemGroup>
+    <JavaCompile Include="app\src\main\java\com\SwiftUI Tutorials\SwiftUI_Tutorials.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\1 - SwiftUI Essentials\A - Creating and Combining Views\A01a_ContentView.java" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\1 - SwiftUI Essentials\A - Creating and Combining Views\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\1 - SwiftUI Essentials\B - Building Lists and Navigation\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\1 - SwiftUI Essentials\C - Handling User Input\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\1 - SwiftUI Essentials\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\2 - Drawing and Animation\D - Drawing Paths and Shapes\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\2 - Drawing and Animation\E - Animating Views and Transitions\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\2 - Drawing and Animation\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\3 - App Design and Layout\F - Composing Complex Interfaces\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\3 - App Design and Layout\G - Working with UI Controls\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\3 - App Design and Layout\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\4 - Framework Integration\H - Interfacing with UIKit\README.md" />
+    <Content Include="app\src\main\java\com\SwiftUI Tutorials\4 - Framework Integration\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DroidUIJson\DroidUIJson\DroidUIJson.androidproj" />
+  </ItemGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
